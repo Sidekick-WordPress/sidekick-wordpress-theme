@@ -1,0 +1,11 @@
+@use "functions" as *;
+
+// Breakpoints
+$breakpointSmallMobile: em(320);
+$breakpointLargeMobile: em(400);
+$breakpointSmallTablet: em(584);
+$breakpointTablet:      em(760);
+$breakpointDesktop:     em(1008);
+$breakpointWide:        em(1272);
+$breakpointSuperWide:   em(1840);
+$breakpointFinal:       em(1920);

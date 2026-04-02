@@ -1,0 +1,24 @@
+{
+    "name": "sidekick-wordpress-theme",
+    "version": "1.0.0",
+    "main": "index.js",
+    "scripts": {
+        "start": "wp-scripts start styles/style.scss",
+        "build": "wp-scripts build styles/style.scss"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Sidekick-WordPress/sidekick-wordpress-theme.git"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Sidekick-WordPress/sidekick-wordpress-theme/issues"
+    },
+    "homepage": "https://github.com/Sidekick-WordPress/sidekick-wordpress-theme#readme",
+    "description": "",
+    "devDependencies": {
+        "@wordpress/scripts": "^31.8.0"
+    }
+}

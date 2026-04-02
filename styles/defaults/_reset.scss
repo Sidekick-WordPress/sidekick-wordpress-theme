@@ -1,0 +1,103 @@
+@use "sass:color";
+@use "sass:math";
+@use "variables" as *;
+@use "functions" as *;
+
+// ==========================================================================
+// 1. Box Sizing
+// ==========================================================================
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+// ==========================================================================
+// 2. Scrollbar Styling
+// ==========================================================================
+
+/* Firefox */
+html {
+    scrollbar-width: thin;
+    scrollbar-color: var(--wp--preset--color--mid-grey) var(--wp--preset--color--darker-grey);
+}
+
+/* Webkit */
+::-webkit-scrollbar {
+    width: rem(8);
+}
+
+::-webkit-scrollbar-track {
+    background: var(--wp--preset--color--darker-grey);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--wp--preset--color--dark-grey);
+    border-radius: rem(4);
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--wp--preset--color--mid-grey);
+}
+
+// ==========================================================================
+// 3. Text-level Semantics (Micro-typography adjustments)
+// ==========================================================================
+
+abbr[title] {
+    border-bottom: rem(1) dotted;
+    text-decoration: none;
+}
+
+b,
+strong {
+    font-weight: bold;
+}
+
+em,
+i,
+dfn {
+    font-style: italic;
+}
+
+mark {
+    background: #ff0;
+    color: #000;
+}
+
+small {
+    font-size: 80%;
+}
+
+// Prevent `sub` and `sup` affecting `line-height`
+sub,
+sup {
+    font-size: 75%;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+}
+
+sup {
+    top: -0.5em;
+}
+
+sub {
+    bottom: -0.25em;
+}
+
+// ==========================================================================
+// 4. Embedded Content Base Defaults
+// ==========================================================================
+
+img {
+    max-width: 100%;
+    height: auto;
+    border: 0;
+    vertical-align: bottom;
+}
+
+svg:not(:root) {
+    overflow: hidden;
+}

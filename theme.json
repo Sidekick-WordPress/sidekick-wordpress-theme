@@ -1,50 +1,127 @@
 {
-  "$schema": "https://schemas.wp.org/trunk/theme.json",
-  "version": 2,
-  "settings": {
-    "appearanceTools": true,
-    "layout": {
-      "contentSize": "800px",
-      "wideSize": "1200px"
-    },
-    "color": {
-      "palette": [
-        {
-          "slug": "base",
-          "color": "#ffffff",
-          "name": "Base"
+    "$schema": "https://schemas.wp.org/trunk/theme.json",
+    "version": 2,
+    "settings": {
+        "appearanceTools": true,
+        "layout": {
+            "contentSize": "800px",
+            "wideSize": "1200px"
         },
-        {
-          "slug": "contrast",
-          "color": "#000000",
-          "name": "Contrast"
-        }
-      ]
-    },
-    "typography": {
-      "fluid": true,
-      "fontSizes": [
-        {
-          "slug": "small",
-          "size": "1rem",
-          "name": "Small"
+        "color": {
+            "palette": [
+                {
+                    "slug": "base",
+                    "color": "#ffffff",
+                    "name": "Base"
+                },
+                {
+                    "slug": "contrast",
+                    "color": "#000000",
+                    "name": "Contrast"
+                },
+                {
+                    "slug": "primary",
+                    "color": "#a84896",
+                    "name": "Primary"
+                },
+                {
+                    "slug": "secondary",
+                    "color": "#628b48",
+                    "name": "Secondary"
+                },
+                {
+                    "slug": "accent",
+                    "color": "#D9B2FF",
+                    "name": "Accent"
+                },
+                {
+                    "slug": "error",
+                    "color": "#cb2b2b",
+                    "name": "Error"
+                },
+                {
+                    "slug": "warning",
+                    "color": "#dea81e",
+                    "name": "Warning"
+                },
+                {
+                    "slug": "okay",
+                    "color": "#628b48",
+                    "name": "Okay"
+                },
+                {
+                    "slug": "darkest-grey",
+                    "color": "#050505",
+                    "name": "Darkest Grey"
+                },
+                {
+                    "slug": "darker-grey",
+                    "color": "#202020",
+                    "name": "Darker Grey"
+                },
+                {
+                    "slug": "dark-grey",
+                    "color": "#404040",
+                    "name": "Dark Grey"
+                },
+                {
+                    "slug": "mid-grey",
+                    "color": "#808080",
+                    "name": "Mid Grey"
+                },
+                {
+                    "slug": "light-grey",
+                    "color": "#bfbfbf",
+                    "name": "Light Grey"
+                },
+                {
+                    "slug": "lighter-grey",
+                    "color": "#e6e6e6",
+                    "name": "Lighter Grey"
+                },
+                {
+                    "slug": "lightest-grey",
+                    "color": "#f0f0f0",
+                    "name": "Lightest Grey"
+                }
+            ]
         },
-        {
-          "slug": "large",
-          "size": "2rem",
-          "name": "Large"
+        "typography": {
+            "fluid": true,
+            "fontSizes": [
+                {
+                    "slug": "small",
+                    "size": "1rem",
+                    "name": "Small"
+                },
+                {
+                    "slug": "large",
+                    "size": "2rem",
+                    "name": "Large"
+                }
+            ]
         }
-      ]
-    }
-  },
-  "styles": {
-    "spacing": {
-      "blockGap": "1.5rem"
     },
-    "typography": {
-      "fontFamily": "system-ui, sans-serif",
-      "fontSize": "1.125rem",
-      "lineHeight": "1.6"
+    "styles": {
+        "spacing": {
+            "blockGap": "1.5rem"
+        },
+        "color": {
+            "background": "var(--wp--preset--color--white)",
+            "text": "var(--wp--preset--color--black)"
+        },
+        "typography": {
+            "fontFamily": "system-ui, sans-serif",
+            "fontSize": "100%",
+            "lineHeight": "1.6"
+        },
+        "blocks": {
+            "core/navigation": {
+                "typography": {
+                    "fontWeight": "600",
+                    "textTransform": "uppercase"
+                }
+            }
+        }
     }
-  }
 }
