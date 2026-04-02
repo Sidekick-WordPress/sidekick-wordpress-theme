@@ -1,0 +1,13 @@
+@use 'defaults/functions';
+@use 'defaults/reset';
+@use 'defaults/variables';
+
+// Parts
+@use 'parts/header';
+
+.sidekick-global-sticky-wrapper {
+    position: sticky;
+    top: 0;
+    z-index: 999;
+    // You can even add transitions here for when the user scrolls!
+}

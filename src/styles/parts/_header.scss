@@ -1,0 +1,39 @@
+.header--sidekick {
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    // Prevent the nav from squishing so the JS can measure its true width accurately
+    .wp-block-site-title,
+    .wp-block-site-logo,
+    .wp-block-navigation {
+        flex-shrink: 0;
+    }
+
+    &.force-mobile-menu {
+
+        // ==========================================================================
+        // Dynamic Mobile Menu Hijack
+        // ==========================================================================
+        .wp-block-navigation {
+            // 1. Hide the standard desktop menu items
+            .wp-block-navigation__container {
+                display: none !important;
+            }
+
+            // 2. Force the hamburger button to show up early
+            .wp-block-navigation__responsive-container-open {
+                display: flex !important;
+            }
+
+            // 3. Ensure the mobile modal overlay still works when clicked
+            .wp-block-navigation__responsive-container.is-menu-open {
+                display: flex !important;
+
+                // Bring the menu items back inside the mobile modal
+                .wp-block-navigation__container {
+                    display: flex !important;
+                }
+            }
+        }
+    }
+}
