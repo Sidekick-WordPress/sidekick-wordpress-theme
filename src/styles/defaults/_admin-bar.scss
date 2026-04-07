@@ -1,0 +1,12 @@
+@use "variables" as *;
+@use "functions" as *;
+
+.admin-bar {
+    .wp-site-blocks {
+        //position: sticky;
+        //margin-top: $adminBarHeightMobile;
+        @media screen and (min-width: calc(783em/16)) {
+            //margin-top: $adminBarHeightDesktop;
+        }
+    }
+}
