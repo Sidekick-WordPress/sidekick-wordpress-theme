@@ -1,13 +1,15 @@
-<!-- wp:group {"tagName":"div","style":{"spacing":{"padding":{"top":"32px","bottom":"32px","left":"24px","right":"24px"},"margin":{"top":"48px"}},"border":{"top":{"color":"var:preset|color|contrast-3","width":"1px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group" style="border-top-color:var(--wp--preset--color--contrast-3);border-top-width:1px;margin-top:48px;padding-top:32px;padding-right:24px;padding-bottom:32px;padding-left:24px">
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"32px","bottom":"32px","left":"24px","right":"24px"}}},"layout":{"type":"constrained"}} -->
+<div class="wp-block-group sidekick__footer" style="padding-top:32px;padding-right:24px;padding-bottom:32px;padding-left:24px">
 
     <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"top","flexWrap":"wrap"}} -->
     <div class="wp-block-group alignwide">
 
-        <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical","justifyContent":"left"}} /-->
+        <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} /-->
 
-        <!-- wp:group {"layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"},"style":{"layout":{"selfStretch":"fit","flexSize":null},"spacing":{"blockGap":"12px"}}} -->
-        <div class="wp-block-group">
+        <!-- wp:group {"className":"footer-meta-stack","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"},"style":{"layout":{"selfStretch":"fit"},"spacing":{"blockGap":"20px"}}} -->
+        <div class="wp-block-group footer-meta-stack">
+
+            <!-- wp:site-logo {"width":120,"shouldSyncIcon":false,"align":"right"} /-->
 
             <!-- wp:social-links {"iconColor":"contrast","iconColorValue":"#111111","openInNewTab":true,"size":"has-small-icon-size","layout":{"type":"flex","justifyContent":"right"}} -->
             <ul class="wp-block-social-links has-small-icon-size has-icon-color">
@@ -20,9 +22,6 @@
             <!-- wp:paragraph {"align":"right"} -->
             <p class="has-text-align-right">© 2026 Enter company copyright info here</p>
             <!-- /wp:paragraph -->
-
-            <!-- wp:site-logo {"width":120,"shouldSyncIcon":false,"align":"right"} /-->
-
         </div>
         <!-- /wp:group -->
 

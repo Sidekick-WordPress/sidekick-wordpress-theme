@@ -1,0 +1,13 @@
+@use "../defaults/functions" as *;
+@use "../defaults/variables" as *;
+
+@media (max-width: $breakpointSmallTablet) {
+    .sidekick__footer {
+        & > .wp-block-group {
+            justify-content: center;
+            & > * {
+                width: 100%;
+            }
+        }
+    }
+}

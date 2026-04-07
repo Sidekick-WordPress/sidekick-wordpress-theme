@@ -5,10 +5,13 @@
 
 // Parts
 @use 'parts/header';
+@use 'parts/footer';
+
+// Templates
+@use 'templates/page';
 
 .sidekick-global-sticky-wrapper {
     position: sticky;
     top: 0;
     z-index: 999;
-    // You can even add transitions here for when the user scrolls!
 }

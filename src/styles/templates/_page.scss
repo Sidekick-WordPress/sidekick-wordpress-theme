@@ -1,0 +1,7 @@
+/* Remove default block spacing on all standard pages */
+body.page {
+    :where(.wp-site-blocks) > * {
+        margin-block-start: 0;
+        margin-block-end: 0;
+    }
+}
