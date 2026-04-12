@@ -1,5 +1,23 @@
+@use "../defaults/variables" as *;
+
 .header--sidekick {
-    position: sticky;
+    position: fixed;
+    left: 0;
     top: 0;
+    width: 100%;
     z-index: 10000;
+}
+
+// When admin bar is present
+.admin-bar {
+    .header--sidekick {
+        top: $adminBarHeightMobile;
+    }
+
+    // This is a WordPress dictated breakpoint
+    @media screen and (min-width: calc(783em/16)) {
+        .header--sidekick {
+            top: $adminBarHeightDesktop;
+        }
+    }
 }
