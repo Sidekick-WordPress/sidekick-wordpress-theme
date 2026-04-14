@@ -83,16 +83,44 @@
         },
         "typography": {
             "fluid": true,
+            "fontWeight": true,
+            "fontStyle": true,
             "fontSizes": [
                 {
                     "slug": "small",
-                    "size": "1rem",
-                    "name": "Small"
+                    "name": "Small",
+                    "size": "1.25rem",
+                    "fluid": {
+                        "min": "1rem",
+                        "max": "1.25rem"
+                    }
+                },
+                {
+                    "slug": "medium",
+                    "name": "Medium",
+                    "size": "1.75rem",
+                    "fluid": {
+                        "min": "1.25rem",
+                        "max": "1.75rem"
+                    }
                 },
                 {
                     "slug": "large",
-                    "size": "2rem",
-                    "name": "Large"
+                    "name": "Large",
+                    "size": "2.5rem",
+                    "fluid": {
+                        "min": "1.75rem",
+                        "max": "2.5rem"
+                    }
+                },
+                {
+                    "slug": "x-large",
+                    "name": "Extra Large",
+                    "size": "3.5rem",
+                    "fluid": {
+                        "min": "2.5rem",
+                        "max": "3.5rem"
+                    }
                 }
             ]
         }
@@ -109,6 +137,20 @@
             "fontFamily": "system-ui, sans-serif",
             "fontSize": "100%",
             "lineHeight": "1.6"
+        },
+        "elements": {
+            "button": {
+                "color": {
+                    "background": "#202020",
+                    "text": "#ffffff"
+                },
+                ":hover": {
+                    "color": {
+                        "background": "#eeeeee",
+                        "text": "#000000"
+                    }
+                }
+            }
         },
         "blocks": {
             "core/navigation": {
