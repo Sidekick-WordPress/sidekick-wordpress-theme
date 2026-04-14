@@ -4,8 +4,8 @@
     "settings": {
         "appearanceTools": true,
         "layout": {
-            "contentSize": "800px",
-            "wideSize": "1200px"
+            "contentSize": "1350px",
+            "wideSize": "1920px"
         },
         "color": {
             "palette": [
@@ -21,18 +21,13 @@
                 },
                 {
                     "slug": "primary",
-                    "color": "#a84896",
-                    "name": "Primary"
+                    "color": "#008dda",
+                    "name": "SYZYGY Blue"
                 },
                 {
                     "slug": "secondary",
-                    "color": "#628b48",
-                    "name": "Secondary"
-                },
-                {
-                    "slug": "accent",
-                    "color": "#D9B2FF",
-                    "name": "Accent"
+                    "color": "#97d700",
+                    "name": "Vivify Green"
                 },
                 {
                     "slug": "error",
