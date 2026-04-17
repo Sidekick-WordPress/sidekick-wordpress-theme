@@ -21,13 +21,13 @@
                 },
                 {
                     "slug": "primary",
-                    "color": "#008dda",
-                    "name": "SYZYGY Blue"
+                    "color": "#cc2936",
+                    "name": "Baker.dev red"
                 },
                 {
                     "slug": "secondary",
-                    "color": "#97d700",
-                    "name": "Vivify Green"
+                    "color": "#fff8e2",
+                    "name": "Baker.dev light gold"
                 },
                 {
                     "slug": "error",
