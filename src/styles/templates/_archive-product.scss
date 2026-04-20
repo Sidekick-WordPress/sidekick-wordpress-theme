@@ -1,0 +1,34 @@
+@use "../defaults/variables" as *;
+@use "../defaults/functions" as *;
+
+.post-type-archive-product {
+    .wp-block-query-pagination {
+        margin: rem(32) 0;
+        .page-numbers,
+        .wp-block-query-pagination-previous,
+        .wp-block-query-pagination-next {
+            border-radius: rem(3);
+            background: #efefef;
+            &:hover,
+            &:focus,
+            &:active {
+                background: #f0f0f0;
+            }
+        }
+
+        .page-numbers {
+            padding: rem(15);
+        }
+
+        .wp-block-query-pagination-previous,
+        .wp-block-query-pagination-next {
+            padding: rem(12) rem(16);
+        }
+
+        a {
+            text-decoration: none;
+        }
+    }
+}
+
+

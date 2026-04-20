@@ -1,0 +1,15 @@
+@use "variables" as *;
+@use "functions" as *;
+
+.woocommerce {
+    select {
+        padding: rem(16) !important;
+        background: #f1f1f1 !important;
+        border: none !important;
+        color: black !important;
+        font-size: rem(16) !important;
+        * {
+            border: none;
+        }
+    }
+}

@@ -2,6 +2,7 @@
 @use 'defaults/admin-bar';
 @use 'defaults/functions';
 @use 'defaults/headings';
+@use 'defaults/inputs';
 @use 'defaults/reset';
 @use 'defaults/variables';
 
@@ -10,7 +11,9 @@
 @use 'parts/footer';
 
 // Templates
+@use 'templates/archive-product';
 @use 'templates/page';
+@use 'templates/single-product';
 
 .sidekick-global-sticky-wrapper {
     position: sticky;
