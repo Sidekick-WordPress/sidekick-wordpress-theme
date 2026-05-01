@@ -141,13 +141,53 @@
         "elements": {
             "button": {
                 "color": {
-                    "background": "#202020",
-                    "text": "#ffffff"
+                    "background": "var(--wp--preset--color--darkest-grey)",
+                    "text": "var(--wp--preset--color--base)"
+                },
+                "border": {
+                    "radius": "4px",
+                    "width": "2px",
+                    "style": "solid",
+                    "color": "var(--wp--preset--color--darkest-grey)"
+                },
+                "spacing": {
+                    "padding": {
+                        "top": "0.75rem",
+                        "right": "1.5rem",
+                        "bottom": "0.75rem",
+                        "left": "1.5rem"
+                    }
+                },
+                "typography": {
+                    "fontWeight": "600",
+                    "textTransform": "uppercase",
+                    "letterSpacing": "0.03em"
                 },
                 ":hover": {
                     "color": {
-                        "background": "#eeeeee",
-                        "text": "#000000"
+                        "background": "var(--wp--preset--color--lighter-grey)",
+                        "text": "var(--wp--preset--color--contrast)"
+                    },
+                    "border": {
+                        "color": "var(--wp--preset--color--lighter-grey)"
+                    }
+                },
+                ":focus": {
+                    "color": {
+                        "background": "var(--wp--preset--color--darkest-grey)",
+                        "text": "var(--wp--preset--color--base)"
+                    },
+                    "outline": {
+                        "color": "var(--wp--preset--color--primary)",
+                        "style": "solid",
+                        "width": "2px",
+                        "offset": "2px"
+                    }
+                },
+                ":active": {
+                    "color": {
+                        "background": "var(--wp--preset--color--darkest-grey)",
+                        "text": "var(--wp--preset--color--base)"
                     }
                 }
             }

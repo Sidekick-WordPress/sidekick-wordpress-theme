@@ -10,6 +10,10 @@
 @use 'parts/header';
 @use 'parts/footer';
 
+// Plugins
+@use 'plugins/everest-forms';
+@use 'plugins/woocommerce';
+
 // Templates
 @use 'templates/archive-product';
 @use 'templates/page';

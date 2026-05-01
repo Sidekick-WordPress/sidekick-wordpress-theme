@@ -1,0 +1,20 @@
+.woocommerce-checkout {
+    fieldset,
+    .wc-block-components-text-input,
+    .wc-blocks-components-select__container,
+    .wc-block-components-checkbox {
+        padding-bottom: 1rem !important;
+    }
+}
+
+.wc-block-mini-cart__quantity-badge {
+    & > svg {
+        height: 1.75rem !important;
+        width: 1.75rem !important;
+    }
+
+    .wc-block-mini-cart__badge {
+        background: var(--wp--preset--color--primary) !important;
+        color: white !important;
+    }
+}

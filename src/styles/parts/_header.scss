@@ -1,11 +1,30 @@
 @use "../defaults/variables" as *;
+@use "../defaults/functions" as *;
 
 .header--sidekick {
     position: fixed;
     left: 0;
     top: 0;
     width: 100%;
-    z-index: 10000;
+    z-index: 9998;
+    transition: background .25s ease-in-out;
+    &.header--shop,
+    &.is-scrolled {
+        background: #181818;
+        .header--sidekick {
+            background: #181818;
+        }
+
+    }
+
+    .header__logo {
+        width: rem(35);
+        height: rem(35);
+    }
+
+    .wp-block-group {
+        gap: rem(8);
+    }
 }
 
 // When admin bar is present
@@ -15,7 +34,7 @@
     }
 
     // This is a WordPress dictated breakpoint
-    @media screen and (min-width: calc(783em/16)) {
+    @media screen and (min-width: em(783)) {
         .header--sidekick {
             top: $adminBarHeightDesktop;
         }

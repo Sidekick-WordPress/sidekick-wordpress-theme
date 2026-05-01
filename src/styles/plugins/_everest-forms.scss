@@ -1,0 +1,88 @@
+@use "../defaults/functions" as *;
+@use "../defaults/variables" as *;
+
+.evf-container {
+    margin: 0 0 2rem;
+    .evf-frontend-row {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        .evf-grid-2 {
+            flex: 0 0 calc(50% - #{rem(8)}) !important;
+        }
+
+        .evf-grid-1 {
+            width: 100% !important;
+        }
+    }
+
+
+    .evf-frontend-grid,
+    .evf-submit-container {
+        padding: rem(5) !important;
+    }
+
+    input,
+    textarea,
+    select {
+        background: #202020;
+        color: white !important;
+        border: 0 !important;
+        outline: none !important;
+    }
+
+    input,
+    textarea {
+        padding: 1rem !important;
+    }
+
+    select {
+        padding: rem(18) rem(16) !important;
+    }
+
+    label {
+        color: white !important;
+        padding-bottom: rem(8);
+    }
+
+    .evf-field {
+        margin: 1rem 0 0 0 !important;
+        padding: 0 !important;
+        input {
+            margin: 0;
+            line-height: inherit !important;
+        }
+
+        textarea {
+            margin-bottom: 1rem;
+        }
+    }
+
+    .evf-submit-container {
+        button[type=submit] {
+            width: 100%;
+            border-radius: 0;
+            color: white !important;
+            background: var(--wp--preset--color--primary) !important;
+            border: 0 !important;
+            outline: none !important;
+            font-weight: 600 !important;
+            text-transform: uppercase;
+            &:hover,
+            &:focus,
+            &:active {
+                color: black !important;
+                background: white !important;
+            }
+        }
+    }
+
+    .evf-error {
+        padding: rem(2);
+        font-size: rem(14);
+        color: white;
+        text-align: center;
+        margin: 0;
+        background: #202020;
+    }
+}
