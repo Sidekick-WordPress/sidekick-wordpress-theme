@@ -11,13 +11,15 @@ if ( ! function_exists( 'sidekick_wp_theme' ) ) :
         // Get the single auto-generated asset file for both JS and CSS
         $asset_path = get_template_directory() . '/build/index.asset.php';
         $asset      = file_exists( $asset_path ) ? require $asset_path : array( 'dependencies' => array(), 'version' => wp_get_theme()->get( 'Version' ) );
+        $style_path = get_template_directory() . '/build/style-index.css';
+        $style_version = file_exists( $style_path ) ? filemtime( $style_path ) : $asset['version'];
 
         // 1. Enqueue the compiled CSS (Filename changed to index.css)
         wp_enqueue_style(
             'sidekick-wp-styles',
             get_template_directory_uri() . '/build/style-index.css',
             array(),
-            $asset['version']
+            $style_version
         );
 
         // 2. Enqueue the compiled JavaScript
@@ -105,3 +107,37 @@ if ( ! function_exists( 'sidekick_wp_theme' ) ) :
     }
 endif;
 add_action( 'after_setup_theme', 'sidekick_wp_theme' );
+
+if ( ! function_exists( 'sidekick_wp_theme_breadcrumb_defaults' ) ) :
+    function sidekick_wp_theme_breadcrumb_defaults( $defaults ) {
+        $defaults['delimiter'] = '<span class="sidekick-breadcrumb__separator">/</span>';
+
+        return $defaults;
+    }
+endif;
+add_filter( 'woocommerce_breadcrumb_defaults', 'sidekick_wp_theme_breadcrumb_defaults' );
+
+if ( ! function_exists( 'sidekick_wp_theme_product_breadcrumbs' ) ) :
+    function sidekick_wp_theme_product_breadcrumbs( $crumbs ) {
+        if ( ! function_exists( 'is_product' ) || ! is_product() || ! function_exists( 'wc_get_page_permalink' ) ) {
+            return $crumbs;
+        }
+
+        $shop_url = wc_get_page_permalink( 'shop' );
+
+        if ( empty( $shop_url ) ) {
+            return $crumbs;
+        }
+
+        foreach ( $crumbs as $crumb ) {
+            if ( isset( $crumb[1] ) && untrailingslashit( $crumb[1] ) === untrailingslashit( $shop_url ) ) {
+                return $crumbs;
+            }
+        }
+
+        array_splice( $crumbs, 1, 0, array( array( __( 'Shop', 'woocommerce' ), $shop_url ) ) );
+
+        return $crumbs;
+    }
+endif;
+add_filter( 'woocommerce_get_breadcrumb', 'sidekick_wp_theme_product_breadcrumbs' );
