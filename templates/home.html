@@ -11,7 +11,7 @@
         <!-- wp:group {"align":"wide","className":"sidekick-blog-hero__inner","layout":{"type":"constrained","justifyContent":"left"}} -->
         <div class="wp-block-group alignwide sidekick-blog-hero__inner">
             <!-- wp:paragraph {"className":"sidekick-blog-hero__eyebrow"} -->
-            <p class="sidekick-blog-hero__eyebrow">Dental insights</p>
+            <p class="sidekick-blog-hero__eyebrow">insights</p>
             <!-- /wp:paragraph -->
 
             <!-- wp:heading {"level":1,"className":"sidekick-blog-hero__title"} -->
@@ -19,7 +19,7 @@
             <!-- /wp:heading -->
 
             <!-- wp:paragraph {"className":"sidekick-blog-hero__summary"} -->
-            <p class="sidekick-blog-hero__summary">Clear, practical guidance for oral health, whole-body wellness, and confident dental care.</p>
+            <p class="sidekick-blog-hero__summary">Practical guidance for everyday life.</p>
             <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
@@ -28,94 +28,54 @@
 
     <!-- wp:group {"className":"sidekick-blog-feed__body","style":{"spacing":{"padding":{"top":"56px","right":"24px","bottom":"72px","left":"24px"}}},"layout":{"type":"constrained"}} -->
     <div class="wp-block-group sidekick-blog-feed__body" style="padding-top:56px;padding-right:24px;padding-bottom:72px;padding-left:24px">
-        <!-- wp:query {"queryId":2,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","className":"sidekick-blog-query","layout":{"type":"default"}} -->
+        <!-- wp:query {"queryId":1,"query":{"perPage":9,"pages":0,"offset":0,"postType":"post","order":"desc","orderBy":"date","author":"","search":"","exclude":[],"sticky":"","inherit":true},"align":"wide","className":"sidekick-blog-query","layout":{"type":"default"}} -->
         <div class="wp-block-query alignwide sidekick-blog-query">
             <!-- wp:post-template {"className":"sidekick-blog-grid","layout":{"type":"grid","columnCount":3}} -->
-                <!-- wp:group {"tagName":"article","className":"sidekick-blog-card","layout":{"type":"default"}} -->
-                <article class="wp-block-group sidekick-blog-card">
-                    <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","className":"sidekick-blog-card__image"} /-->
+            <!-- wp:group {"tagName":"article","className":"sidekick-blog-card","layout":{"type":"default"}} -->
+            <article class="wp-block-group sidekick-blog-card">
+                <!-- wp:post-featured-image {"isLink":true,"aspectRatio":"4/3","className":"sidekick-blog-card__image"} /-->
 
-                    <!-- wp:group {"className":"sidekick-blog-card__content","layout":{"type":"default"}} -->
-                    <div class="wp-block-group sidekick-blog-card__content">
-                        <!-- wp:group {"className":"sidekick-blog-card__meta","layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"10px"}}} -->
-                        <div class="wp-block-group sidekick-blog-card__meta" style="gap:10px">
-                            <!-- wp:post-date /-->
-                            <!-- wp:post-terms {"term":"category","separator":"","className":"sidekick-blog-card__terms"} /-->
-                        </div>
-                        <!-- /wp:group -->
-
-                        <!-- wp:post-title {"isLink":true,"level":2,"className":"sidekick-blog-card__title"} /-->
-
-                        <!-- wp:post-excerpt {"moreText":"","excerptLength":28,"className":"sidekick-blog-card__excerpt"} /-->
-
-                        <!-- wp:read-more {"content":"Read article","className":"sidekick-blog-card__read-more"} /-->
+                <!-- wp:group {"className":"sidekick-blog-card__content","layout":{"type":"default"}} -->
+                <div class="wp-block-group sidekick-blog-card__content">
+                    <!-- wp:group {"className":"sidekick-blog-card__meta","layout":{"type":"flex","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"10px"}}} -->
+                    <div class="wp-block-group sidekick-blog-card__meta" style="gap:10px">
+                        <!-- wp:post-date /-->
+                        <!-- wp:post-terms {"term":"category","separator":"","className":"sidekick-blog-card__terms"} /-->
                     </div>
                     <!-- /wp:group -->
-                </article>
+
+                    <!-- wp:post-title {"isLink":true,"level":2,"className":"sidekick-blog-card__title"} /-->
+
+                    <!-- wp:post-excerpt {"moreText":"","excerptLength":28,"className":"sidekick-blog-card__excerpt"} /-->
+
+                    <!-- wp:read-more {"content":"Read article","className":"sidekick-blog-card__read-more"} /-->
+                </div>
                 <!-- /wp:group -->
+            </article>
+            <!-- /wp:group -->
             <!-- /wp:post-template -->
 
             <!-- wp:query-pagination {"className":"sidekick-blog-pagination","layout":{"type":"flex","justifyContent":"center","flexWrap":"wrap"}} -->
-                <!-- wp:query-pagination-previous {"label":"Previous"} /-->
-                <!-- wp:query-pagination-numbers /-->
-                <!-- wp:query-pagination-next {"label":"Next"} /-->
+            <!-- wp:query-pagination-previous {"label":"Previous"} /-->
+            <!-- wp:query-pagination-numbers /-->
+            <!-- wp:query-pagination-next {"label":"Next"} /-->
             <!-- /wp:query-pagination -->
 
             <!-- wp:query-no-results -->
-                <!-- wp:group {"className":"sidekick-blog-no-results","layout":{"type":"constrained"}} -->
-                <div class="wp-block-group sidekick-blog-no-results">
-                    <!-- wp:heading {"level":2} -->
-                    <h2 class="wp-block-heading">No posts found</h2>
-                    <!-- /wp:heading -->
-
-                    <!-- wp:paragraph -->
-                    <p>Check back soon for new articles.</p>
-                    <!-- /wp:paragraph -->
-                </div>
-                <!-- /wp:group -->
-            <!-- /wp:query-no-results -->
-        </div>
-        <!-- /wp:query -->
-    </div>
-    <!-- /wp:group -->
-
-    <!-- wp:group {"className":"sidekick-blog-cta","style":{"spacing":{"padding":{"top":"56px","right":"24px","bottom":"56px","left":"24px"}}},"backgroundColor":"dark-grey","textColor":"base","layout":{"type":"constrained"}} -->
-    <div class="wp-block-group sidekick-blog-cta has-base-color has-dark-grey-background-color has-text-color has-background" style="padding-top:56px;padding-right:24px;padding-bottom:56px;padding-left:24px">
-        <!-- wp:group {"align":"wide","className":"sidekick-blog-cta__inner","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"32px"}}} -->
-        <div class="wp-block-group alignwide sidekick-blog-cta__inner">
-            <!-- wp:group {"className":"sidekick-blog-cta__copy","layout":{"type":"constrained","justifyContent":"left"}} -->
-            <div class="wp-block-group sidekick-blog-cta__copy">
-                <!-- wp:paragraph {"className":"sidekick-blog-cta__eyebrow"} -->
-                <p class="sidekick-blog-cta__eyebrow">Begin your journey</p>
-                <!-- /wp:paragraph -->
-
-                <!-- wp:heading {"level":2,"className":"sidekick-blog-cta__title"} -->
-                <h2 class="wp-block-heading sidekick-blog-cta__title">Your next visit can feel calm, clear, and connected.</h2>
-                <!-- /wp:heading -->
-            </div>
-            <!-- /wp:group -->
-
-            <!-- wp:group {"className":"sidekick-blog-cta__card","layout":{"type":"constrained"}} -->
-            <div class="wp-block-group sidekick-blog-cta__card">
-                <!-- wp:heading {"level":3} -->
-                <h3 class="wp-block-heading">Book Your Experience</h3>
+            <!-- wp:group {"className":"sidekick-blog-no-results","layout":{"type":"constrained"}} -->
+            <div class="wp-block-group sidekick-blog-no-results">
+                <!-- wp:heading {"level":2} -->
+                <h2 class="wp-block-heading">No posts found</h2>
                 <!-- /wp:heading -->
 
                 <!-- wp:paragraph -->
-                <p>Call the office or request an appointment and we will help guide you to the right next step.</p>
+                <p>Check back soon for new articles.</p>
                 <!-- /wp:paragraph -->
-
-                <!-- wp:buttons -->
-                <div class="wp-block-buttons">
-                    <!-- wp:button {"className":"sidekick-blog-cta__button"} -->
-                    <div class="wp-block-button sidekick-blog-cta__button"><a class="wp-block-button__link wp-element-button" href="/contact/">Book your appointment</a></div>
-                    <!-- /wp:button -->
-                </div>
-                <!-- /wp:buttons -->
             </div>
             <!-- /wp:group -->
+            <!-- /wp:query-no-results -->
         </div>
-        <!-- /wp:group -->
+        <!-- /wp:query -->
     </div>
     <!-- /wp:group -->
 </main>
