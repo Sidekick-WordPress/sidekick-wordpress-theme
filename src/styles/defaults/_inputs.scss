@@ -40,3 +40,20 @@
         cursor: not-allowed;
     }
 }
+
+// These have to be separate
+::-webkit-input-placeholder {
+    color: #777777 !important;
+    font-size: calc(16rem/16);
+}
+
+:-moz-placeholder {
+    color: #777777 !important;
+    font-size: calc(16rem/16);
+}
+
+::-moz-placeholder {
+    color: #777777 !important;
+    font-size: calc(16rem/16);
+}
+

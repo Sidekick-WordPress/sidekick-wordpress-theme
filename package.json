@@ -1,6 +1,6 @@
 {
     "name": "sidekick-wordpress-theme",
-    "version": "1.0.2",
+    "version": "1.0.1",
     "main": "index.js",
     "scripts": {
         "start": "wp-scripts start src/index.js",

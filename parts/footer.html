@@ -1,29 +1,28 @@
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"32px","bottom":"32px","left":"24px","right":"24px"}}},"layout":{"type":"constrained"}} -->
-<div class="wp-block-group sidekick__footer" style="padding-top:32px;padding-right:24px;padding-bottom:32px;padding-left:24px">
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"clamp(20px,2.5vw,40px)","bottom":"clamp(20px,2.5vw,40px)","left":"24px","right":"24px"}}},"backgroundColor":"darkest-grey","textColor":"base","className":"sidekick__footer","layout":{"type":"constrained"}} -->
+<div class="wp-block-group sidekick__footer has-base-color has-darkest-grey-background-color has-text-color has-background" style="padding-top:clamp(20px,2.5vw,40px);padding-right:24px;padding-bottom:clamp(20px,2.5vw,40px);padding-left:24px">
 
-    <!-- wp:group {"align":"wide","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"top","flexWrap":"wrap"}} -->
-    <div class="wp-block-group alignwide">
+    <!-- wp:group {"align":"wide","className":"footer__layout","layout":{"type":"flex","justifyContent":"space-between","verticalAlignment":"center","flexWrap":"wrap"},"style":{"spacing":{"blockGap":"24px"}}} -->
+    <div class="wp-block-group alignwide footer__layout">
 
-        <!-- wp:navigation {"overlayMenu":"never","layout":{"type":"flex","orientation":"vertical"}} /-->
+        <!-- wp:group {"className":"footer__brand","layout":{"type":"flex","verticalAlignment":"center","flexWrap":"nowrap"},"style":{"spacing":{"blockGap":"16px"}}} -->
+        <div class="wp-block-group footer__brand">
 
-        <!-- wp:group {"className":"footer-meta-stack","layout":{"type":"flex","orientation":"vertical","justifyContent":"stretch"},"style":{"layout":{"selfStretch":"fit"},"spacing":{"blockGap":"20px"}}} -->
-        <div class="wp-block-group footer-meta-stack">
+            <!-- wp:html -->
+            <a class="footer__logo-link" href="/" aria-label="Home">
+                <svg xmlns="http://www.w3.org/2000/svg" class="footer__logo" viewBox="0 0 293.65 297.86" fill="currentColor" role="img" aria-hidden="true" focusable="false">
+                    <path fill-rule="evenodd" d="M292.31,158.13l-40.8-40.8L282,86.85c2.58-2.58,10.42-8.62,11.28-12v-37c0-7.2,1.48-34.87-2.16-37C288.05-.83,273.77.45,269,.45H3.83C2.64,1.25,1.3,1.7.71,3.09l-.24,31v75.36c0,10.32-1.82,25.91,1.68,33.36l39.6,39.6-41,41L.47,239.73l.24,23.52,21.36,21.36C24.89,287.43,32.41,297,36,297.81c4.1,1,15.22-12.34,17.76-14.88l48.72-48.24,44.4-44.4L255.11,297.81c5.26.92,15.6-12.23,19-15.6L293,263l.24-26.88v-53C293.27,175.35,294.58,164.19,292.31,158.13ZM132,161.25c-.76,3-8.68,9.16-11,11.52L87.59,205.89,37,256.53l-7.44-7.68c-4.8-11,8.66-19.7,12.72-23.76l28.08-28.32.24-28.08c-.93-4-7.36-8.08-10.08-10.8l-31-31.44-.24-97.2h103.2Zm131.28,88.8-6.72,6.48-69.12-69.12L169,168.93c-2-2-6.34-4.75-7.2-7.68l-.48-132h103.2c0,5.63,1.22,29.36-.48,32.4l-41,41.28L222.71,131c.75,3.21,8.59,9.3,11,11.76l29.76,29.76c2.45,3.4,1,13.94,1,19.2v39.12C264.47,237.2,265.17,245.56,263.27,250.05Z"></path>
+                </svg>
+            </a>
+            <!-- /wp:html -->
 
-            <!-- wp:site-logo {"width":120,"shouldSyncIcon":false,"align":"right"} /-->
+            <!-- wp:site-title {"level":0,"isLink":false,"className":"footer__site-title"} /-->
 
-            <!-- wp:social-links {"iconColor":"contrast","iconColorValue":"#111111","openInNewTab":true,"size":"has-small-icon-size","layout":{"type":"flex","justifyContent":"right"}} -->
-            <ul class="wp-block-social-links has-small-icon-size has-icon-color">
-                <!-- wp:social-link {"service":"facebook","url":"https://facebook.com"} /-->
-                <!-- wp:social-link {"service":"instagram","url":"https://instagram.com"} /-->
-                <!-- wp:social-link {"service":"x","url":"https://x.com"} /-->
-            </ul>
-            <!-- /wp:social-links -->
-
-            <!-- wp:paragraph {"align":"right"} -->
-            <p class="has-text-align-right">© 2026 Enter company copyright info here</p>
-            <!-- /wp:paragraph -->
         </div>
         <!-- /wp:group -->
+
+        <!-- wp:paragraph {"className":"footer__copyright"} -->
+        <p class="footer__copyright">&copy; All rights reserved.</p>
+        <!-- /wp:paragraph -->
 
     </div>
     <!-- /wp:group -->

@@ -7,24 +7,38 @@
     top: 0;
     width: 100%;
     z-index: 9999;
-    transition: background .25s ease-in-out;
-    &.header--shop,
-    &.is-scrolled {
-        background: #181818;
-        .header--sidekick {
-            background: #181818;
-        }
 
+    &.has-sgb-mobile-menu {
+        padding-top: rem(16);
+        padding-bottom: rem(15);
+    }
+
+    .header__logo-wrapper {
+        line-height: 0;
+    }
+
+    .header__logo-link {
+        display: inline-block;
+        color: inherit;
+        text-decoration: none;
+        line-height: 0;
     }
 
     .header__logo {
-        width: rem(35);
-        height: rem(35);
+        display: block;
+        width: rem(40);
+        height: auto;
     }
 
     .wp-block-group {
         gap: rem(8);
     }
+}
+
+// Disable the logo link when already on the front page
+body.home .header--sidekick .header__logo-link {
+    pointer-events: none;
+    cursor: default;
 }
 
 // When admin bar is present
