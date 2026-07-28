@@ -92,43 +92,44 @@
         },
         "typography": {
             "fluid": true,
+            "defaultFontSizes": false,
             "fontWeight": true,
             "fontStyle": true,
             "fontSizes": [
                 {
                     "slug": "small",
                     "name": "Small",
-                    "size": "1.25rem",
+                    "size": "0.9375rem",
                     "fluid": {
-                        "min": "1rem",
-                        "max": "1.25rem"
+                        "min": "0.75rem",
+                        "max": "0.9375rem"
                     }
                 },
                 {
                     "slug": "medium",
                     "name": "Medium",
-                    "size": "1.75rem",
+                    "size": "1.3125rem",
                     "fluid": {
-                        "min": "1.25rem",
-                        "max": "1.75rem"
+                        "min": "0.9375rem",
+                        "max": "1.3125rem"
                     }
                 },
                 {
                     "slug": "large",
                     "name": "Large",
-                    "size": "2.5rem",
+                    "size": "54px",
                     "fluid": {
-                        "min": "1.75rem",
-                        "max": "2.5rem"
+                        "min": "33.062px",
+                        "max": "54px"
                     }
                 },
                 {
                     "slug": "x-large",
                     "name": "Extra Large",
-                    "size": "3.5rem",
+                    "size": "63px",
                     "fluid": {
-                        "min": "2.5rem",
-                        "max": "3.5rem"
+                        "min": "37.521px",
+                        "max": "63px"
                     }
                 }
             ]

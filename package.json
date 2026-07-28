@@ -19,6 +19,6 @@
     "homepage": "https://github.com/Sidekick-WordPress/sidekick-wordpress-theme#readme",
     "description": "",
     "devDependencies": {
-        "@wordpress/scripts": "^31.8.0"
+        "@wordpress/scripts": "^33.0.0"
     }
 }
